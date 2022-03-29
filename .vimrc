@@ -21,3 +21,6 @@ set hlsearch
 
 " Tab文字を半角スペースにする
 set expandtab
+
+" シンタックスハイライトを有効化する
+:syntax enable
