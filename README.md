@@ -1,4 +1,4 @@
-### Download
+### ダウンロード
 ```
 $ cd
 $ git clone https://github.com/achiyama/dotfiles.git
