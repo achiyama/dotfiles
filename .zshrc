@@ -1,5 +1,4 @@
-# alias
-alias ll="ls -al"
+# Load zprezto
 
 # GitHub autocompletion
 eval "$(gh completion -s zsh)"
@@ -10,9 +9,17 @@ source <(ng completion script)
 # prezto
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
-# fnm
-export PATH="/home/achiyama/.local/share/fnm:$PATH"
-eval "`fnm env`"
+# keybind
+bindkey \^U backward-kill-line
 
-# fnm
-eval "$(fnm env --use-on-cd)"
+
+case ${OSTYPE} in
+    # macOS系
+    darwin*)
+        source ~/.zshrc.darwin
+        ;;
+    # Linux系
+    linux*)
+        source ~/.zshrc.linux
+        ;;
+esac
