@@ -1,3 +1,0 @@
-# fnm
-export PATH="/home/achiyama/.local/share/fnm:$PATH"
-eval "`fnm env`"

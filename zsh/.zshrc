@@ -16,10 +16,11 @@ bindkey \^U backward-kill-line
 case ${OSTYPE} in
     # macOS系
     darwin*)
-        source ~/.zshrc.darwin
+        # fnm
+        export PATH="/home/achiyama/.local/share/fnm:$PATH"
         ;;
+        
     # Linux系
     linux*)
-        source ~/.zshrc.linux
         ;;
 esac
